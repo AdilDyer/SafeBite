@@ -1,0 +1,280 @@
+<%layout("/layouts/boilerplate.ejs")%>
+
+<div class="homebig" id="blur">
+  <div class="home-first">
+    <div class="first-video">
+      <video
+        playsinline=""
+        id="firstvideo"
+        disableremoteplayback=""
+        autoplay=""
+        muted=""
+        loop=""
+      >
+        <source
+          src="https://res.cloudinary.com/ddxv0iwcs/video/upload/v1711867732/Cutest_Puppies_Dogs_in_8K_UHD_Video_v3gpoe.mov"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <!-- <div class="first-video">
+      <video
+        playsinline=""
+        id="vid-back"
+        disableremoteplayback=""
+        autoplay=""
+        muted=""
+        loop=""
+      >
+        <source
+          src="https://res.cloudinary.com/ddxv0iwcs/video/upload/v1711867732/Cutest_Puppies_Dogs_in_8K_UHD_Video_v3gpoe.mov"
+          type="video/mp4"
+        />
+      </video>
+    </div> -->
+    <div class="home-first-content">
+      <img
+        src="https://res.cloudinary.com/ddxv0iwcs/image/upload/v1711864325/Screenshot_2024-03-31_at_11.21.08_AM_hokz8s.png"
+        alt=""
+        loading="lazy"
+        class="first-image pop-out"
+      />
+
+      <h1 class="pop-out">
+        <span><span id="ieeename">SafeBite</span> <br /> </span>Surveillance
+      </h1>
+      <br />
+      <p class="pop-out" id="typed-text"></p>
+      <br />
+
+      <div class="for-mob-video" style="display: none">
+        <video
+          playsinline=""
+          style="display: none"
+          disableremoteplayback=""
+          autoplay=""
+          muted=""
+          loop=""
+        >
+          <source
+            src="https://res.cloudinary.com/ddxv0iwcs/video/upload/v1711100435/TNW_Conference_2022___The_official_aftermovie_fjxfzm.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <button class="nav-link home-join" id="download">
+        <a href="" style="text-decoration: none">
+          <b>Get Data !</b>
+        </a>
+      </button>
+      <a href="#home-third" style="text-decoration: none">
+        <button style="color: white" class="btn learn-more">Learn more</button>
+      </a>
+    </div>
+  </div>
+  <div class="home-second" id="home-second">
+    <div class="title-line">
+      <h3 class="pop-out">Some Statistics...</h3>
+      <!-- <button style="color: white" class="btn btn-outline-secondary pop-out">
+        View All
+      </button> -->
+      <!-- <ul class="navbar-nav">
+        <li class="nav-item pop-out"> -->
+      <!-- <a class="nav-link" target="_blank" href="/news">View All</a> -->
+      <!-- </li>
+      </ul> -->
+    </div>
+    <br /><br />
+    <div class="cards">
+      <div class="card">
+        <div class="row g-0">
+          <div>
+            <img
+              loading="lazy"
+              src="data:image/jpeg;base64,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"
+              class="img-fluid"
+              alt="A cute dog Image"
+            />
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <h6 class="card-title">
+                Alarming Increase in Average Rabies count Per Area
+              </h6>
+              <p class="card-text">
+                The NRCP reported 6644 cases of human rabies between 2012 and
+                2022,1,3 while the NHP reported 2863 cases between 2005 and
+                2020.
+              </p>
+
+              <ul class="navbar-nav">
+                <li class="nav-item pop-out">
+                  <!-- <a class="nav-link" target="_blank" href="/news">News</a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row g-0">
+          <div>
+            <img
+              loading="lazy"
+              src="https://www.southernliving.com/thmb/a4b73J7C4S4wgSmymmEgXRCmACA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-185743593-2000-507c6c8883a44851885ea4fbc10a2c9e.jpg"
+              class="img-fluid"
+              alt="A cute Dog image.."
+            />
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <h6 class="card-title">
+                Rabies occurs in more than 150 countries and territories
+              </h6>
+              <p class="card-text">
+                Dogs are the source of the vast majority of human rabies deaths,
+                contributing up to 99% of all rabies transmissions to humans.
+              </p>
+              <ul class="navbar-nav">
+                <li class="nav-item pop-out">
+                  <!-- <a class="nav-link" target="_blank" href="/news">News</a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row g-0">
+          <div>
+            <img
+              loading="lazy"
+              src="https://www.thesprucepets.com/thmb/hxWjs7evF2hP1Fb1c1HAvRi_Rw0=/2765x0/filters:no_upscale():strip_icc()/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg"
+              class="img-fluid"
+              alt="A cute Dog image .."
+            />
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <h6 class="card-title">
+                Low awareness of the need to seek health care after a dog bite
+              </h6>
+              <p class="card-text">
+                It claims the lives of more than 55000 people each year, India
+                is endemic for rabies, and accounts for 36% of the world’s
+                rabies deaths.As per available information, it causes 18 000-20
+                000 deaths every year.
+              </p>
+              <ul class="navbar-nav">
+                <li class="nav-item pop-out">
+                  <!-- <a class="nav-link" target="_blank" href="/news">News</a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-third">
+    <div class="overlay"></div>
+    <h1>We Protect The Paws.</h1>
+    <br />
+    <p>&hearts;&hearts;&hearts;</p>
+    <h5>
+      As a company, our motto "We protect the paws" <br />encapsulates our core
+      values and commitment to our customers, employees, and the communities we
+      serve. <br /><br />
+      At the heart of our operations lies a profound dedication to safeguarding
+      what matters most, whether it be the physical well-being of pets, the
+      integrity of our business practices, or the preservation of our
+      environment and its protection against diseases like rabies. <br /><br />
+      First and foremost, our motto reflects our unwavering dedication to the
+      welfare of rabie's victims. By offering a range of high-quality products
+      and Data designed to shield pet's paws from harm, we not only enhance
+      their comfort and mobility but also demonstrate our deep-seated compassion
+      for our country's resilience towards rabies. <br /><br />
+      Through rigorous research, innovation, and stringent quality control
+      measures, we ensure that our protective solutions against the rabies
+      provide optimal safety and peace of mind for the dogs and human beings.
+    </h5>
+  </div>
+  <div class="home-fourth">
+    <div class="row g-0 we-got">
+      <div class="col-md-6 we-got-img-div">
+        <img
+          class="we-got-img"
+          src="https://scontent.fjai2-3.fna.fbcdn.net/v/t39.30808-6/302284307_394175206166267_5978427723284490749_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iktgBydJxJ8Ab61ZJlV&_nc_oc=AdiDl6-UFdRigvlbODV1x4v-Vt9VqAF-AQtFwrwWfslAyc20z3bvVQH_qkV9haVEXyYHXQhWga5ENhPpSzqLs5DB&_nc_ht=scontent.fjai2-3.fna&oh=00_AfDO-dQLCqhsvT6vGtdjMeJ10EMGtBpAcTDDkY1whSYgkQ&oe=661B3333"
+          alt="A Cute Dog Photo"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-md-6 we-got-data">
+        <h2>We Got The Data about Rabies.</h2>
+        <div class="we-got-cards">
+          <div class="we-got-card row">
+            <div class="col-3"><h1>1</h1></div>
+            <div class="col-9">
+              <h4>We Surveillance the Verified Rabie's Data from Experts.</h4>
+            </div>
+          </div>
+          <div class="we-got-card row">
+            <div class="col-3"><h1>2</h1></div>
+            <div class="col-9">
+              <h4>We Optimize and Equate The Data according to Your Need.</h4>
+            </div>
+          </div>
+          <div class="we-got-card row">
+            <div class="col-3"><h1>3</h1></div>
+            <div class="col-9">
+              <h4>We Provide Solutions to Your Data Needs .</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function checkWidth() {
+    var newsCards = document.querySelectorAll(".home-second .card");
+    var screenWidth = window.innerWidth;
+    if (screenWidth < 769) {
+      // Adjust this threshold as needed
+      newsCards.forEach((element) => {
+        element.classList.add("pop-out-active");
+      });
+    } else {
+    }
+  }
+
+  // Initial check
+  checkWidth();
+
+  //first p's moving text
+  const text =
+    " Fearless hearts, vigilant eyes, With unity, our resolve arise. In the dance of shadows, under moonlit skies, We shield our world from rabies' guise. We Protect the Paws !";
+  const delay = 50; // Adjust the typing speed (milliseconds per character)
+  function typeText() {
+    if (index < text.length) {
+      document.getElementById("typed-text").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeText, delay);
+    }
+  }
+  let index = 0;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let no = 23 * 1;
+    if (window.scrollY == 0) {
+      no += window.scrollY;
+    } //if i make the no being calculated at the time of dom load then it actually works everytime otherwise it sometimes works and sometimes doesnt
+    let firstVideo = document.querySelector("#firstvideo");
+    firstVideo.style.marginLeft = no + "rem";
+
+    typeText();
+  });
+</script>
