@@ -23,6 +23,8 @@ nav {
 
 .navbar-brand {
   margin: 2rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .navbar-brand img {
   border-radius: 1rem;
@@ -38,7 +40,8 @@ nav {
 }
 
 .nav-link {
-  color: grey;
+  color: white;
+  font-weight: 500;
 }
 .nav-item {
   padding: 0 0.2rem;
@@ -134,7 +137,7 @@ nav {
 .home-first h1 {
   font-weight: 700;
   margin-bottom: 0;
-  text-shadow: rgb(10, 67, 123) 3px 3px;
+  text-shadow: rgb(10, 67, 123) 5px 4px;
   font-size: 3rem;
 
   /* text-shadow: 3px 3px black; */
@@ -143,7 +146,7 @@ nav {
   text-align: start;
   width: 28%;
   line-height: 2rem;
-  min-height: 10rem;
+  min-height: 7rem;
   font-size: 1rem;
   color: antiquewhite;
   /* text-shadow: 1px 0px wheat; */
@@ -174,7 +177,7 @@ nav {
   margin-left: 26rem;
   margin-top: 1rem;
   transition: margin-left 1.5s !important ;
-  box-shadow: midnightblue 2px 2px 50px;
+  box-shadow: rgb(25, 25, 112,0.5) 2px 0px 50px;
   /* box-shadow: rgba(255, 30, 86, 0.5) 2px 2px 50px; */
 }
 .pop-out {
@@ -188,12 +191,11 @@ nav {
   transform: translateY(0);
 }
 .first-image {
-  width: 15rem;
+  width: 10rem;
   /* position: relative; */
   /* right: 2rem; */
   margin-bottom: 2rem;
-  border: lightblue thick;
-  border-style: dashed;
+
   border-radius: 3rem;
 }
 .ieee-btn {
@@ -212,12 +214,12 @@ nav {
   padding: 4rem 5rem;
 }
 .home-second .title-line h3 {
-  color: #f8f6e3;
+  color: rgb(255, 234, 79);
 }
 
 .home-second .card {
   background-color: #f8f6e3;
-  color: #2d2bbe;
+  color: #1b1899;
   box-shadow: 0 0 20px rgb(128, 0, 128, 0.5);
 }
 
@@ -232,7 +234,7 @@ nav {
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
-  color: midnightblue;
+  color: #5f5f88;
 }
 .home-second .card img {
   width: 100%;
@@ -342,7 +344,8 @@ nav {
 }
 .we-got-img {
   width: 35rem;
-  box-shadow: lightgreen 0 0 50px;
+  object-fit: cover;
+  box-shadow: coral 0 0 50px;
   border-radius: 1rem;
 }
 
@@ -386,12 +389,39 @@ nav {
   color: midnightblue;
 }
 
+.home-poster-div {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, pink, lightcoral);
+}
+
+.home-poster-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#presentation {
+  width: 100%;
+  height: 135vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  align-items: center;
+
+  justify-content: center;
+  background-color: #35374b;
+}
+#presentation iframe {
+  width: 100%;
+  height: 100%;
+}
 /* team page */
 
 /*  */
 
 .big-div-team {
-  background-color: white;
+  background-color: seashell;
 }
 .team-banner {
   background-color: #00539c;
@@ -410,33 +440,74 @@ nav {
   font-size: 3.5rem;
 
   font-weight: 800;
-  text-shadow: dodgerblue 2px 2px;
+  /* text-shadow: dodgerblue 2px 2px; */
   text-align: center;
 }
-
+.team-cards .for-mob {
+  display: none;
+}
+.team-cards .non-mob {
+  width: 100%;
+  padding: 5rem;
+}
+.team-cards .non-mob .col-md-4,
+.team-cards .non-mob .col-md-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-cards .non-mob .col-md-4 img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 30%;
+  border: blanchedalmond thick solid;
+}
+.team-cards .non-mob .col-md-8 {
+  flex-direction: column;
+}
 .team-banner h2 {
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
 }
+.team-banner h4 {
+  text-align: center;
+}
+.team-a {
+  background-color: powderblue;
+  padding-bottom: 5rem;
+}
+.team-b {
+  padding-bottom: 5rem;
+  background-color: seashell;
+}
+.team-a h1,
+.team-b h1 {
+  background-color: blanchedalmond;
 
+  padding: 1rem;
+}
 .team-cards {
-  min-height: 70vh;
+  height: fit-content;
   display: flex;
 
   padding-top: 1rem;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
   justify-content: center;
 }
 .team-title {
   font-size: 2rem;
   color: #00539c;
-  text-shadow: dodgerblue 1px 1px;
+  /* text-shadow: dodgerblue 1px 1px; */
   font-weight: 800;
   text-align: center;
 }
 
 .person img {
-  width: 20rem;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
   border-radius: 30%;
   border: blanchedalmond thick solid;
 }
@@ -446,6 +517,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.person p {
+  margin-bottom: 0;
 }
 
 /* connect us page  */
@@ -459,26 +533,27 @@ nav {
   padding-bottom: 5rem;
   color: white;
 }
+.team-banner {
+  width: 100%;
+background: linear-gradient(to right, midnightblue, rgb(8, 110, 136));
+}
 
 .contactus h1 {
   text-align: center;
   padding-top: 5rem;
 }
-.contact-cont img {
-  height: 60%;
-  width: 50%;
-}
 
-.map-div {
+.map-div-contact {
+  width: 100% !important;
   display: flex;
+  padding-top: 2rem;
   justify-content: center;
   align-items: center;
 }
-
-iframe {
-  border-radius: 2rem;
+.map-div-contact iframe {
   width: 80%;
   height: 30rem;
+  margin-bottom: 3rem;
 }
 
 /* */
@@ -515,6 +590,16 @@ iframe {
 .socials a {
   margin: 0.5rem;
   font-size: 2rem;
+}
+
+#map-div-footer {
+  display: flex;
+  flex-direction: column;
+}
+#map-div-footer iframe {
+  height: 20rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 /* cursor animation  */
@@ -574,7 +659,7 @@ iframe {
   align-items: center;
   flex-direction: column;
 
-  background-color: antiquewhite;
+  background: linear-gradient(to right, midnightblue, dodgerblue);
 }
 .regis-logo img {
   width: auto;
@@ -835,5 +920,258 @@ iframe {
   .pop-out {
     opacity: 1 !important;
     transform: translateY(0) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-brand img {
+    width: 15%;
+
+    margin-left: 1rem;
+    height: auto;
+  }
+  .navbar-brand,
+  .nav-right {
+    all: initial;
+  }
+  .navbar-brand p {
+    display: none;
+  }
+  .profile-icon-div {
+    margin-bottom: 2rem;
+  }
+  #home-link {
+    color: white;
+  }
+  .home-first {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .home-first .row {
+    width: 100%;
+  }
+  .home-first p {
+    font-size: 2rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 4rem !important;
+    width: 100% !important;
+  }
+  #greet {
+    font-size: 1.5rem;
+  }
+
+  .home-first img {
+    transform: translateX(0);
+    width: 100%;
+  }
+  .div-firstimg {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .home-second h1 {
+    font-size: 1.5rem;
+  }
+  .btns-connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+  }
+  #con-btn {
+    margin-left: 0;
+  }
+  #emailp {
+    font-size: 1rem;
+  }
+  .home-fourth h1 {
+    font-size: 2rem;
+  }
+
+  .slidi img {
+    padding-left: 4rem;
+  }
+  .stat-poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stat-row {
+    padding: 0;
+    flex-direction: column;
+  }
+  .stat-col {
+    padding: 3rem;
+  }
+
+  .container-info {
+    padding: 3rem;
+  }
+  .container-info h1 {
+    text-align: start;
+
+    padding-bottom: 2rem;
+  }
+  #carouselExampleAutoplaying {
+    width: 100% !important;
+    height: fit-content;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 15rem;
+  }
+  #carouselExampleAutoplaying img {
+    height: 15rem;
+    width: 20rem !important;
+  }
+  .two-cards-card {
+    width: 100%;
+    padding: 0;
+  }
+
+  .beyond-placement img {
+    width: auto !important;
+    height: 15rem !important;
+
+    transform: translate(0);
+  }
+  .news {
+    padding: 2.5rem;
+    padding-top: 0rem;
+  }
+  .social-feeds {
+    flex-wrap: wrap;
+  }
+
+  .insta-card,
+  .linkedin-card,
+  .twitter-card {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+    overflow: scroll;
+  }
+  .linkedin-card {
+    height: 30rem;
+  }
+
+  .footer-div {
+    padding: 0;
+  }
+  .footer-card {
+    margin-bottom: 2rem;
+    padding: 0 0;
+    width: 100%;
+  }
+  #aofwebteam {
+    display: block;
+  }
+  .login-big-div {
+    all: initial;
+    background-image: url("https://res.cloudinary.com/ddxv0iwcs/image/upload/v1711016540/NFSU_8_Ballistics_Research_and_Testing_Range_lblcxj.jpg");
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .login-card {
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 4rem;
+  }
+  .login-img-div {
+    max-width: 100%;
+  }
+
+  .regis-content-div {
+    padding: 0;
+    padding-top: 2rem;
+  }
+  .banner {
+    height: fit-content;
+  }
+  .banner h1 {
+    padding: 2rem;
+  }
+  .btns-container {
+    flex-wrap: wrap;
+  }
+  .btns-container a {
+    margin: 1rem;
+  }
+  .resources-student-big-div .banner h1 {
+    font-size: 3.3rem;
+    width: 100%;
+  }
+  .resources-student-big-div .banner h4 {
+    text-align: center;
+  }
+  .content-div {
+    padding: 0;
+  }
+  .content-div h2 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .content-div .content-cards {
+    all: initial;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .content-div .card {
+    width: 100%;
+  }
+  .content-div-faq .content-title {
+    padding-bottom: 2rem;
+  }
+
+  .team-banner h2 {
+    font-size: 1.3rem;
+
+    width: 100%;
+  }
+  .big-div-team img {
+    width: 10rem;
+    object-fit: cover;
+    height: 10rem;
+  }
+  .non-mob {
+    display: none;
+  }
+  .for-mob {
+    display: block !important;
+  }
+  .person {
+    text-align: center;
+  }
+  .person p {
+    font-size: 0.8rem;
+  }
+  .person .socials {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+  .person .socials a {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .person h2 {
+    width: 90%;
+  }
+  .team-cards {
+    flex-wrap: wrap;
+  }
+  .contactus .person {
+    margin-bottom: 3rem;
   }
 }
