@@ -149,7 +149,7 @@ Mr. Somesh Sinha,
   });
   const mailOptions = {
     from: "ChiefCoordinator@SafeBiteSurveillance<smile.itsadil@gmail.com>",
-    to: "someshs_c23034@students.isquareit.edu.in",
+    to: "someshsinha902@gmail.com",
     subject: "Urgent: High Risk Alert - Rabies Dog Presence in Your Area",
     html: message,
   };
