@@ -144,10 +144,10 @@ nav {
 }
 .home-first p {
   text-align: start;
-  width: 28%;
+  width: 18%;
   line-height: 2rem;
   min-height: 7rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: antiquewhite;
   /* text-shadow: 1px 0px wheat; */
   font-family: cursive;
@@ -177,7 +177,7 @@ nav {
   margin-left: 26rem;
   margin-top: 1rem;
   transition: margin-left 1.5s !important ;
-  box-shadow: rgb(25, 25, 112,0.5) 2px 0px 50px;
+  box-shadow: rgb(25, 25, 112, 0.5) 2px 0px 50px;
   /* box-shadow: rgba(255, 30, 86, 0.5) 2px 2px 50px; */
 }
 .pop-out {
@@ -209,18 +209,18 @@ nav {
 /* home second */
 
 .home-second {
-  background-color: #8576ff;
+  background-color: #35374b;
 
   padding: 4rem 5rem;
 }
 .home-second .title-line h3 {
-  color: rgb(255, 234, 79);
+  color: blanchedalmond;
 }
 
 .home-second .card {
-  background-color: #f8f6e3;
+  background-color: blanchedalmond;
   color: #1b1899;
-  box-shadow: 0 0 20px rgb(128, 0, 128, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .home-second .card .card-title {
@@ -535,7 +535,7 @@ nav {
 }
 .team-banner {
   width: 100%;
-background: linear-gradient(to right, midnightblue, rgb(8, 110, 136));
+  background: linear-gradient(to right, midnightblue, rgb(8, 110, 136));
 }
 
 .contactus h1 {
